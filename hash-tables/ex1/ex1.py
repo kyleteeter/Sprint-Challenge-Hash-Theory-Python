@@ -23,8 +23,13 @@ def get_indices_of_item_weights(weights, length, limit):
         second_set = limit - first_set
         retrieve = hash_table_retrieve(ht, second_set)
 
+        if retrieve is not None:
+            if retrieve > i:
+                result = (retrieve, i)
+            elif retrieve < i:
+                result = (i, retrieve)
 
-    return None
+    return print_answer(result)
 
 
 def print_answer(answer):
