@@ -20,4 +20,9 @@ def reconstruct_trip(tickets, length):
     YOUR CODE HERE
     """
 
+    # Loop through tickets and insert into the hash HashTable
+    for ticket in tickets:
+        hash_table_insert(hashtable, source, destination)
+
+
     return route
