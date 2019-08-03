@@ -32,6 +32,7 @@ def get_indices_of_item_weights(weights, length, limit):
 
 def print_answer(answer):
     if answer is not None:
-        print((answer[0] + " " + answer[1]))
+        print(f"{answer[0]}  {answer[1]}")
+        return answer
     else:
         print("None")
